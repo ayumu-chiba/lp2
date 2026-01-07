@@ -34,11 +34,8 @@ $(function () {
 });
 
 
-
-
-
-$('.faq-question').on('click', function () {
-  const $item = $(this).closest('.faq-item');
+$('.faq__question').on('click', function () {
+  const $item = $(this).closest('.faq__item');
   const $icon = $(this).find('.toggle-icon');
   $item.toggleClass('active');
   $icon.toggleClass('bi-caret-down-fill bi-caret-up-fill');
