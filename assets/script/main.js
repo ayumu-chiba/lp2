@@ -33,22 +33,6 @@ $(function () {
   });
 });
 
-
-$('.cover-slick').on('afterChange', function(event, slick, currentSlide){
-
-  if (window.innerWidth >= 1180) {
-
-    var lastStart = slick.slideCount - 3; // 3枚表示前提
-
-    if (currentSlide >= lastStart) {
-      slick.slickSetOption('slidesToShow', 1, true);
-    } else {
-      slick.slickSetOption('slidesToShow', 3, true);
-    }
-  }
-});
-
-
 $('.faq__question').on('click', function () {
   const $item = $(this).closest('.faq__item');
   const $icon = $(this).find('.toggle-icon');

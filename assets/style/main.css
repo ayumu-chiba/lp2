@@ -439,6 +439,7 @@ html {
 }
 
 .voices {
+  position: relative;
   width: auto;
   margin-bottom: 3.7rem;
 }
@@ -450,10 +451,10 @@ html {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1180px) {
   .voices__slider {
     margin: 0 auto;
-    max-width: 74rem;
+    max-width: 69rem;
   }
 }
 
@@ -500,10 +501,6 @@ html {
   }
 }
 
-.voices__user {
-  position: relative;
-}
-
 .voices__card-box {
   margin: 1rem 2.5rem;
 }
@@ -530,13 +527,17 @@ html {
   }
 }
 
-@media (min-width: 768px) {
-  .voices__item--type-a {
-    margin-left: 6.3rem;
-  }
+.cover-slick .slick-track {
+  display: flex;
+}
 
-  .voices__item--type-c {
-    margin-right: 6.3rem;
+.slick-list {
+  overflow: hidden;
+}
+
+@media (min-width: 1180px) {
+  .cover-slick .slick-slide {
+    max-width: 23rem;
   }
 }
 
@@ -604,7 +605,7 @@ html {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1180px) {
   .slick-arrow {
     top: calc((100% - 24px) / 2);
   }
@@ -615,11 +616,11 @@ html {
   top: 10.7rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1180px) {
   .prev-arrow {
-    left: 1.05rem;
+    transform: translateX(-140%);
     top: 10.7rem;
-    width: 3rem;
+    width: clamp(2.5rem, 3.4vw, 3rem);
   }
 }
 
@@ -628,11 +629,11 @@ html {
   top: 10.7rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1180px) {
   .next-arrow {
-    right: 1.05rem;
+    transform: translateX(140%);
     top: 10.7rem;
-    width: 3rem;
+    width: clamp(2.5rem, 3.4vw, 3rem);
   }
 }
 
@@ -683,57 +684,14 @@ html {
   color: #00AFBF !important;
 }
 
-@media (min-width: 768px) {
-  .cover-slick .slick-track {
-    display: flex;
-    gap: 0;
-  }
-
-  .voices__card {
-    height: 100%;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1180px) {
- .voices__item--type-1 {
-    margin-left: 3.5rem;
-  }
-
-  .voices__item--type-2 {
-    margin-right: 3.5rem;
-  }
-
-  .voices__item--type-3 {
-    margin-left: 3rem;
-    margin-right: 0;
-  }
-
-  .voices__item--type-4 {
-    margin-left: 2.5rem;
-    margin-right: 3rem;
-  }
-
- .voices__item--type-5 {
-    margin-left: 3rem;
-    margin-right: 0rem;
-  }
- .voices__item--type-6 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
- .voices__item--type-7 {
-    margin-left: 2.5rem;
-    margin-right: 0rem;
-  }
-
- .prev-arrow {
+  .prev-arrow {
     left: 1.05rem;
     top: 10.7rem;
     width: clamp(2rem, 4.5vw, 2.5rem);
   }
 
- .next-arrow {
+  .next-arrow {
     right: 1.05rem;
     top: 10.7rem;
     width: clamp(2rem, 4.5vw, 2.5rem);
